@@ -245,8 +245,6 @@ async function run_wfc() {
 			p.state_valid[i] = i == choice;
 		p.state = choice;
 
-		if (await wait()) return;
-
 		// start affect DFS
 		propagate_collapse(p);
 
